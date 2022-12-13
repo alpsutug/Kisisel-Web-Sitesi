@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+    <head>
+       
+
+        <title>Web Sitem</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Alpsu Tuğ kişisine ait html,css,javascript,bootstrap,react kullanılarak
+        geliştirilmiş kişisel bilgiler içeren web sitesi">
+        <meta name="keywords" content="Alpsu,tug,site,web,kişisel,html,css,javascript,bootstrap,react,front-end">
+  
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <style>
+
+          body{
+              margin: 0;
+          }
+          #kayanyazi{
+              width: 100%;
+              height: 25px;
+              background-color: red;
+              color: white;
+              position: fixed;
+              padding-top: 1px;
+              bottom: 0;
+              left: 0;
+
+
+          
+  }
+
+  #kapsamaalani{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+  }
+
+  #haberalani{
+      width: 1000px;
+      margin: 0 auto;
+  }
+  #baslikalani{
+      width: 900px;
+      height: 60px;
+      float: left;
+      text-align: left;
+     
+  }
+  #iconalani{
+      width: 100px;
+      height: 45px;
+      padding-top: 15px;
+      float: left;
+      text-align: right;
+  }
+
+  #icerik{
+      text-align: justify;
+      font-size: 15px;
+  }
+        </style>
+
+
+
+    </head>
+
+
+    <body style="background-color:rgb(255, 255, 255); ">
+
+       
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+            <a class="navbar-brand" href="index.html" style="color:antiquewhite;">
+                <img src="resimler/fener.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Alpsu
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"  >Anasayfa </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="cv.html"  >Özgeçmiş</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                   İlgi Alanlarım
+                  </a>
+                  <div class="dropdown-menu  bg-light" active>
+                    <a class="dropdown-item" href="futbol.html">Futbol</a>
+                    <a class="dropdown-item" href="müzik.html">Müzik</a>
+                   
+                  </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="iletisim.html"  >İletişim</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Bul</button>
+              </form>
+            </div>
+          </nav>
+
+          
+         
+          
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="resimler/hello.jpg" class="d-block w-100" alt="hello" style="height:580px ;">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Merhaba, web siteme hoşgeldiniz...</h5>
+                    <p>Kendim hakkımda paylaştığım bir çok bilgi ve ilgi alanlarıma bu siteden ulaşabilirsiniz.</p>
+                    <p class="lead mb-0"><a href="cv.html" class="text-white font-weight-bold">Hakkımda daha fazla öğren...</a></p>
+                  </div>
+              </div>
+          
+            </div>
+          </div>
+     
+
+
+
+        
+
+
+  
+           
+              <div class="container" id="kapsamaalani">
+                <div class="row">
+                  <div class="col-md-12 blog-main mt-5 " >
+                   
+              
+                    <div class="blog-post" id="haberalani">
+                      <h1 class="blog-post-title display-3" id="baslikalani">Ben Kimim ?</h1>
+                      <div id="iconalani"><img src="resimler/buyut.png" title="Metni Büyüt" style="cursor: pointer; width: 40px; height: 40px;" onclick="buyut()"/><img src="resimler/kucult.png.jpg" title="Metni Küçült" style="cursor: pointer;  width: 40px; height: 40px;" onclick="kucult()"/></div>
+                    
+                      
+                      <div id="icerik">
+                        <br> <br><br>
+                        <p class="blog-post-meta" >21 Kasım, 2022 </p>
+                      <p>Merhaba, öncelikle kişisel web siteme hoşgeldiniz. Ben Alpsu Tuğ. 10 Kasım 1999 yılında Gümüşhane ilinin Şiran ilçesinde dünyaya geldim. Mustafa Azmi Doğan Anadolu Lisesinden 2018 yılında mezun oldum. 2022 Yılının Temmuz ayında ise Kırıkkale Üniversitesi Bilgisayar Mühendisliği bölümünü bitirdim.</p>
+                      
+                      </blockquote>
+                      <p>Front-end web geliştirmeye merak saldım ve html,css,javascript,bootstrap,react gibi alanlara yoğunlaşarak kendimi geliştirmeye başladım. Hakkımdaki akademik bilgilerime <a href="cv.html">buradan</a> ulaşabilirsiniz.</p>
+                      <p>Kendim hakkımda başka şeyler de paylaşmak istiyorum. 7 yıldır rap müzik ile ilgileniyorum. Stüdyo da kayıtlarını aldığım 11 tane şarkım var.
+                        Ayrıca doğduğumdan beri koyu fanatik bir Fenerbahçe taraftarıyım. Rap müziğin yanı sıra müzik aletlerinden olan gitar ve kalimba çalmayı da biliyorum.
+                      </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+          
+
+              <div class="container">
+            <div class="card-deck mt-3">
+              <div class="card">
+                <img src="resimler/site2.jpg" class="card-img-top" alt="..." style="height:417px ;">
+                <div class="card-body">
+                  <p class="card-text">2019 Yılında <a href="https://www.youtube.com/watch?v=AJizAfGO7Kc" target="_blank">"Pembe Dizi" </a>isimli rap parçamın kaydını alırken stüdyodan bir fotoğraf.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="resimler/site3.jpg" class="card-img-top" alt="..." style="height:417px ;">
+                <div class="card-body">
+                  <p class="card-text">Redbull Warm-Up şarkı yarışmasından bir fotoğraf.</p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="resimler/site1.jpg" class="card-img-top" alt="..." style="height:419px ;">
+                <div class="card-body">
+                  
+                  <p class="card-text">Lise yıllarımdan sınıflarası futbol turnuvası çeyrek final maçından bir fotoğraf.</p>
+             
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+           
+<div class="b-example-divider"></div>
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Anasayfa</a></li>
+      <li class="nav-item"><a href="cv.html" class="nav-link px-2 text-muted">Özgeçmiş</a></li>
+      <li class="nav-item"><a href="müzik.html" class="nav-link px-2 text-muted">İlgi Alanlarım </a></li>
+
+      <li class="nav-item"><a href="iletisim.html" class="nav-link px-2 text-muted">İletişim</a></li>
+    </ul>
+    <div id="kayanyazi" ><marquee onmouseover="this.stop()" onmouseout="this.start()">Kişisel Web siteme hoşgeldiniz :)</marquee></div>
+    <!--üstüne gelince dursun diye onmouseover ve onmouseout belirledik-->
+    <p class="text-center text-muted">&copy; 2022 Alpsu Tuğ</p>
+    
+    <div class="container">
+      <center>
+   <a href="https://www.instagram.com/alpanka06/" target="_blank"><img src="resimler/instagramm.png" width="100" height="100"></a> 
+    <a href="https://www.facebook.com/alpsu.tug.1/" target="_blank"><img src="resimler/facebok.png" width="100" height="100" ></a>
+    <a href="https://www.youtube.com/@alpanka067" target="_blank"><img src="resimler/youtubee.png" width="100" height="100"></a>
+    <a href="https://twitter.com/Alpanka06" target="_blank"><img src="resimler/twittt.png" width="100" height="100"></a>
+   <a href="https://tr.linkedin.com/in/alpsu-tuğ-08a27520a" target="_blank"><img src="resimler/linkedn.png" width="100" height="100"></a> 
+  </center>
+  </div>
+
+
+  </footer>
+</div>
+
+
+ <script>
+
+            var standartfontboyutu =15;
+            function buyut()
+            {
+                standartfontboyutu= standartfontboyutu+1;
+                document.getElementById("icerik").style.fontSize = standartfontboyutu + "px";
+            }
+
+            function kucult()
+            {
+                standartfontboyutu= standartfontboyutu-1;
+                document.getElementById("icerik").style.fontSize = standartfontboyutu + "px";
+            }
+
+
+         
+
+
+
+        </script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+  
+
+
+     
+
+    </body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+    <head>
+       
+
+        <title>Web Sitem</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Alpsu Tuğ kişisine ait html,css,javascript,bootstrap,react kullanılarak
+        geliştirilmiş kişisel bilgiler içeren web sitesi">
+        <meta name="keywords" content="Alpsu,tug,site,web,kişisel,html,css,javascript,bootstrap,react,front-end">
+  
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+
+
+
+    </head>
+
+
+    <body style="background-color:rgb(182, 238, 194); ">
+
+       
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary" >
+            <a class="navbar-brand" href="index.html" style="color:antiquewhite;">
+                <img src="resimler/fener.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Alpsu
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"  >Anasayfa </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="cv.html"  >Özgeçmiş</a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                   İlgi Alanlarım
+                  </a>
+                  <div class="dropdown-menu  bg-light" active>
+                    <a class="dropdown-item" href="futbol.html">Futbol</a>
+                    <a class="dropdown-item" href="müzik.html">Müzik</a>
+                   
+                  </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="iletisim.html"  >İletişim</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Bul</button>
+              </form>
+            </div>
+          </nav>
+          <div class="container">
+            <div class="py-5 text-center">
+              <img class="d-block mx-auto mb-4" src="resimler/ilet.png" alt="" width="72" height="72">
+              <h2>İletişime Geçmek İçin</h2>
+              <p class="lead">Aşağıdaki formu doldurarak benimle iletişime geçebilirsiniz. Ayrıca isteklerinizi de 
+                paylaşarak sitemin gelişimine destek olabilirsiniz.
+              </p>
+            </div>
+          
+          
+          
+               
+              
+              <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">Form</h4>
+                <form class="needs-validation" novalidate>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName">Adınız</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required >
+                      <div class="invalid-feedback">
+                        Valid first name is required.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName">Soyadınız</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Valid last name is required.
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="mb-3">
+                    <label for="email">E-Mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@gmail.com" required>
+                    <div class="invalid-feedback">
+                      Please enter a valid email address for shipping updates.
+                    </div>
+                  </div>
+          
+                  <div class="mb-3">
+                    <label for="address">Web Adresi</label>
+                    <input type="url" class="form-control" id="address" placeholder="https://www.youtube.com" required>
+                    <div class="invalid-feedback">
+                      Please enter your shipping address.
+                    </div>
+                  </div>
+          
+          
+                  <div class="row">
+                    <div class="col-md-5 mb-3">
+                      <label for="country">Şehir</label>
+                      <select class="custom-select d-block w-100" id="country" required>
+                        <option value="">Seçin...</option>
+                        <option>Ankara</option>
+                        <option>İstanbul</option>
+                        <option>İzmir</option>
+                        <option>Bursa</option>
+                        <option>Çanakkale</option>
+                        <option>Adana</option>
+                        <option>Trabzon</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid country.
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="state">Cinsiyet</label>
+                      <select class="custom-select d-block w-100" id="state" required>
+                        <option value="">Seçin...</option>
+                        <option>Erkek</option>
+                        <option>Kadın</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please provide a valid state.
+                      </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="zip">Yaş</label>
+                      <input type="number" class="form-control" id="yas" required>
+                     
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 mb-3">
+                    <label for="zip">İstek</label>
+                          
+        <textarea  id="alan" style="width: 650px; height:250px" onkeypress="ornek()"></textarea>
+        <br><br>
+        <div style="width: 600px;"> Kullanılan Karakter Sayısı : <strong id="kullanılankarakter">0</strong></div>
+        <div style="width: 600px;"> Kalan Karakter Sayısı : <strong id="kalankarakter">250</strong></div>
+
+                    
+                  </div>
+
+
+                  <hr class="mb-4">
+                  <input class="btn btn-primary btn-lg btn-block mb-5" type="submit" value="Gönder" > 
+                  <input class="btn btn-danger btn-lg btn-block mb-5" type="reset" value="Sil">
+               
+                </form>
+              </div>
+              <div class="b-example-divider"></div>
+
+              <div class="container">
+                <footer class="py-3 my-4">
+                  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Anasayfa</a></li>
+                    <li class="nav-item"><a href="cv.html" class="nav-link px-2 text-muted">Özgeçmiş</a></li>
+                    <li class="nav-item"><a href="müzik.html" class="nav-link px-2 text-muted">İlgi Alanlarım </a></li>
+              
+                    <li class="nav-item"><a href="iletisim.html" class="nav-link px-2 text-muted">İletişim</a></li>
+                  </ul>
+                  <div id="kayanyazi" ><marquee onmouseover="this.stop()" onmouseout="this.start()">Kişisel Web siteme hoşgeldiniz :)</marquee></div>
+                  <!--üstüne gelince dursun diye onmouseover ve onmouseout belirledik-->
+                  <p class="text-center text-muted">&copy; 2022 Alpsu Tuğ</p>
+                  
+                  <div class="container">
+                    <center>
+                 <a href="https://www.instagram.com/alpanka06/" target="_blank"><img src="resimler/instagramm.png" width="100" height="100"></a> 
+                  <a href="https://www.facebook.com/alpsu.tug.1/" target="_blank"><img src="resimler/facebok.png" width="100" height="100" ></a>
+                  <a href="https://www.youtube.com/@alpanka067" target="_blank"><img src="resimler/youtubee.png" width="100" height="100"></a>
+                  <a href="https://twitter.com/Alpanka06" target="_blank"><img src="resimler/twittt.png" width="100" height="100"></a>
+                 <a href="https://tr.linkedin.com/in/alpsu-tuğ-08a27520a" target="_blank"><img src="resimler/linkedn.png" width="100" height="100"></a> 
+                </center>
+                </div>
+              
+              
+                </footer>
+              </div>
+          
+ 
+
+
+
+
+              <script>
+
+                var kullanılan = 0;
+                var maximum=249;  // 250 bir eksiği olmalı
+
+                function ornek()
+                {
+                    var baglan = document.getElementById("alan");
+                    var uzunluk=baglan.value.length;
+                    if(uzunluk>=maximum)
+                    {
+                        var deger = baglan.value;
+                        var olustur = deger.substr(0,maximum);
+                        document.getElementById("alan").value=olustur;
+                        document.getElementById("kullanılankarakter").innerHTML =maximum + 1;
+                        document.getElementById("kalankarakter").innerHTML = 0;
+                    }
+                    else{
+                        
+                        var deger = baglan.value;
+                        var olustur = deger.substr(0,maximum);
+                        document.getElementById("alan").value=olustur;
+                        document.getElementById("kullanılankarakter").innerHTML = uzunluk + 1;
+                        document.getElementById("kalankarakter").innerHTML = (maximum + 1) - (uzunluk + 1);
+                    }
+                }
+
+
+
+        </script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+
+        </div>
+
+    </body>
+
+
+</html>
